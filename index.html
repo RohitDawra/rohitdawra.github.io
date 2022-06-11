@@ -1989,10 +1989,286 @@
   box-sizing: border-box; 
   overflow: visible; 
   visibility: inherit;
-}</style>
+}
+.u-gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .u-gallery-item .u-back-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .u-back-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .u-show-text-none .u-over-slide {
+    display: none;
+  }
+  .u-over-slide .u-gallery-heading,
+  .u-over-slide .u-gallery-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .u-gallery.u-layout-carousel .u-carousel-indicators li {
+    opacity: 0.5;
+  }
+  .u-gallery.u-layout-carousel .u-carousel-indicators li.u-active {
+    opacity: 1;
+  }
+  .u-no-transition *,
+  .u-no-transition *:before,
+  .u-no-transition *:after {
+    transition: none !important;
+  }
+  .u-layout-carousel.u-gallery.u-product-zoom .u-back-slide,
+  .u-layout-thumbnails.u-gallery.u-product-zoom .u-back-slide {
+    background-size: contain;
+    background-position: 50% 50%;
+    cursor: zoom-in;
+    overflow: hidden;
+  }
+  .u-layout-carousel.u-gallery.u-product-zoom .u-back-slide.hover img,
+  .u-layout-thumbnails.u-gallery.u-product-zoom .u-back-slide.hover img {
+    opacity: 1;
+  }
+  .u-layout-carousel.u-gallery.u-product-zoom .u-back-slide img,
+  .u-layout-thumbnails.u-gallery.u-product-zoom .u-back-slide img {
+    min-width: 120%;
+    min-height: 120%;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+  }
+  .u-slider .u-carousel-inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .u-slider .u-carousel-inner > .u-carousel-item {
+    flex: 1;
+    align-items: initial;
+    min-height: 100%;
+  }
+  .u-slider .u-carousel-inner .u-carousel-item.u-active,
+  .u-slider .u-carousel-inner .u-carousel-item-next,
+  .u-slider .u-carousel-inner .u-carousel-item-prev {
+    display: flex;
+  }
+  .u-layout-grid .u-gallery-inner {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    min-height: 100%;
+  }
+  .u-layout-thumbnails,
+  .u-layout-carousel {
+    display: flex;
+  }
+  .u-layout-thumbnails .u-carousel-inner,
+  .u-layout-carousel .u-carousel-inner {
+    flex: 1;
+  }
+  .u-layout-thumbnails .u-carousel-item,
+  .u-layout-carousel .u-carousel-item {
+    height: 100%;
+    flex-direction: column;
+  }
+  .u-layout-thumbnails .u-carousel-item.u-active,
+  .u-layout-carousel .u-carousel-item.u-active,
+  .u-layout-thumbnails .u-carousel-item.u-carousel-item-next,
+  .u-layout-carousel .u-carousel-item.u-carousel-item-next,
+  .u-layout-thumbnails .u-carousel-item.u-carousel-item-prev,
+  .u-layout-carousel .u-carousel-item.u-carousel-item-prev {
+    display: flex;
+  }
+  .u-layout-thumbnails .u-carousel-item .u-back-slide,
+  .u-layout-carousel .u-carousel-item .u-back-slide {
+    position: relative;
+  }
+  .u-layout-carousel:not(.u-gallery-slider) .u-over-slide {
+    position: relative;
+    height: auto;
+  }
+  .u-layout-thumbnails {
+    flex-direction: column;
+    grid-gap: 0 !important;
+  }
+  .u-layout-thumbnails .u-over-slide {
+    display: none;
+  }
+  .u-layout-thumbnails .u-carousel-indicators {
+    display: none;
+  }
+  .u-layout-thumbnails .u-carousel-thumbnails {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+  }
+  .u-layout-thumbnails .u-carousel-thumbnail {
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .u-carousel-thumbnail-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .u-thumbnails-position-bottom {
+    flex-direction: column;
+  }
+  .u-thumbnails-position-bottom .u-carousel-thumbnails {
+    flex-direction: row;
+    order: 10;
+    overflow-x: auto;
+  }
+  .u-thumbnails-position-top {
+    flex-direction: column;
+  }
+  .u-thumbnails-position-top .u-carousel-thumbnails {
+    flex-direction: row;
+    order: -1;
+    overflow-x: auto;
+  }
+  .u-thumbnails-position-left {
+    flex-direction: row;
+  }
+  .u-thumbnails-position-left .u-carousel-thumbnails {
+    flex-direction: column;
+    order: -1;
+    overflow-y: auto;
+  }
+  .u-thumbnails-position-right {
+    flex-direction: row;
+  }
+  .u-thumbnails-position-right .u-carousel-thumbnails {
+    flex-direction: column;
+    order: 10;
+    overflow-y: auto;
+  }  
+.u-section-2 .u-gallery-1 {
+  height: 609px;
+  width: 988px;
+  margin: 30px auto 60px;
+}
+.u-section-2 .u-carousel-item-1 {
+  margin-right: 0;
+}
+.u-section-2 .u-over-slide-1 {
+  min-height: 100px;
+  padding: 10px;
+}
+.u-section-2 .u-carousel-item-2 {
+  margin-right: 0;
+}
+.u-section-2 .u-over-slide-2 {
+  min-height: 100px;
+  padding: 10px;
+}
+.u-section-2 .u-carousel-thumbnails-1 {
+  padding-top: 10px;
+}
+.u-section-2 .u-carousel-thumbnail-1 {
+  width: 100px;
+  height: 100px;
+}
+.u-section-2 .u-carousel-thumbnail-2 {
+  width: 100px;
+  height: 100px;
+}
+.u-section-2 .u-carousel-control-1 {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  top: 265px;
+  right: auto;
+  padding: 8px;
+}
+.u-section-2 .u-carousel-control-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 265px;
+  left: auto;
+  right: 10px;
+  padding: 8px;
+}
+.u-section-2 .u-carousel{
+  position:relative;
+}
+.u-carousel-thumbnails {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+.u-carousel-thumbnail {
+    flex-shrink: 0;
+    overflow: hidden;
+
+}
+.u-layout-thumbnails {
+    flex-direction: column;
+    grid-gap: 0 !important;
+    display: flex;
+    height: 100%;
+}
+.u-carousel-thumbnail-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 861px;
+  }
+  .u-section-2 .u-text-1 {
+    margin-right: 161px;
+    margin-left: 0;
+  }
+  .u-section-2 .u-gallery-1 {
+    width: 940px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 991px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 884px;
+  }
+  .u-section-2 .u-text-1 {
+    margin-right: 0;
+  }
+  .u-section-2 .u-gallery-1 {
+    width: 720px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .u-section-2 .u-gallery-1 {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .u-section-2 .u-gallery-1 {
+    width: 340px;
+  }
+}
+</style>
     
 </head>
-  <body class="u-body">
+<body class="u-body">
 <header class="u-clearfix u-header u-header" id="sec-d045"><div class="u-clearfix u-sheet u-valign-right u-sheet-1">
         
      
@@ -2024,19 +2300,19 @@
                 </a>
               </li>
               <li id="comp-knebed6b2" data-direction="ltr" data-listposition="center" data-data-id="dataItem-kriu0q9a" data-state="menu false  link" data-index="2" class="Y5j6d _3KF65">
-                <a data-testid="linkElement" href="#sec-2fd6" target="_self" class="_2DUrw" aria-haspopup="false">
+                <a data-testid="linkElement" href="#sec-e2a9" target="_self" class="_2DUrw" aria-haspopup="false">
                   <div class="_1u8sp">
                     <div class="" style="text-align:right">
-                      <p class="_1zyfI" style="text-align:right" id="comp-knebed6b2label">Blog</p>
+                      <p class="_1zyfI" style="text-align:right" id="comp-knebed6b2label" >Projects</p>
                     </div>
                   </div>
                 </a>
               </li>
-              <li id="comp-knebed6b3" data-direction="ltr" data-listposition="right" data-data-id="dataItem-krix3njd" data-state="menu false  link" data-index="3" class="Y5j6d _3KF65">
-                <a data-testid="linkElement" href="#" target="_self" class="_2DUrw" aria-haspopup="false">
+              <li id="comp-knebed6b2" data-direction="ltr" data-listposition="right" data-data-id="dataItem-krix3njd" data-state="menu false  link" data-index="3" class="Y5j6d _3KF65">
+                <a data-testid="linkElement" href="#sec-2fd6" target="_self" class="_2DUrw" aria-haspopup="false">
                   <div class="_1u8sp">
                     <div class="" style="text-align:right">
-                      <p class="_1zyfI" style="text-align:right" id="comp-knebed6b3label">Projects</p>
+                      <p class="_1zyfI" style="text-align:right" id="comp-knebed6b2label">Blog</p>
                     </div>
                   </div>
                 </a>
@@ -2185,6 +2461,61 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-2" id="sec-e2a9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <h3 class="u-text u-text-default u-text-1"><b>Projects </b>
+          </h3>
+        
+        <p class="u-align-justify u-text u-text-grey-50"> I have worked on a couple of projects outside of my full time job. Being involved from ideation phase to launching it to public,helped me to gain experience across Engineering, Design, Operations, Sales and Marketing. </p>
+        <div class="u-carousel u-gallery u-layout-thumbnails u-lightbox u-show-text-always u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-d4da">
+          <div class="u-carousel-inner u-gallery-inner" role="listbox">
+            <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1" data-gallery-uid="1">
+              <div class="u-back-slide" data-image-width="1761" data-image-height="1080">
+                <img class="u-back-image u-expanded" src="quick.PNG">
+              </div>
+       
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-2" data-gallery-uid="1">
+              <div class="u-back-slide" data-image-width="1280" data-image-height="867">
+                <img class="u-back-image u-expanded" src="yes.PNG">
+              </div>
+            </div>
+          </div>
+          <a class="u-carousel-control u-carousel-control-prev u-hover-black u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-white u-carousel-control-1" href="#carousel-d4da" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-carousel-control u-carousel-control-next u-hover-black u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-white u-carousel-control-2" href="#carousel-d4da" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+          <ol class="u-carousel-thumbnails u-spacing-10 u-carousel-thumbnails-1">
+            <li class="u-active u-carousel-thumbnail u-carousel-thumbnail-1" data-u-target="#carousel-d4da" data-u-slide-to="0">
+              <img class="u-carousel-thumbnail-image u-image" src="quick.PNG">
+            </li>
+            <li class="u-carousel-thumbnail u-carousel-thumbnail-2" data-u-target="#carousel-d4da" data-u-slide-to="1">
+              <img class="u-carousel-thumbnail-image u-image" src="yes.PNG">
+            </li>
+          </ol>
         </div>
       </div>
     </section>
